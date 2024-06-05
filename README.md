@@ -2,12 +2,13 @@
  Bot que enviar email através do outlook e lança toda vez que o código é executado
 
 
-# outlook = win32.Dispatch('outlook.application')
-Esse comando acima faz a portabilidade com o outlook
+# Esse comando faz a portabilidade com o outlook
+outlook = win32.Dispatch('outlook.application')
 
-# destinatarios = ["emailaserenviado@gmail.com"]
-Adicione os emails que quer enviar nesse modelo acima
+# Adicione os emails que quer enviar nesse modelo acima
+destinatarios = ["emailaserenviado@gmail.com"]
 
-# imagem = r"C:\Seu\caminho\para\imagem\e o\pix.jpg"
-# email.Attachments.Add(imagem)
-Caso não vá enviar imagens no email, remova essas linhas
+# Caso não vá enviar imagens no email, remova essas linhas
+imagem = r"C:\Seu\caminho\para\imagem\e o\pix.jpg"
+email.Attachments.Add(imagem)
+
